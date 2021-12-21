@@ -55,7 +55,7 @@ public class PriceThrottler implements PriceProcessor, AutoCloseable {
   }
 
   public int getSubscribersCount() {
-    return processorsRegistry.size();
+    return processorsRegistry.size() +1;
   }
 
   public void unsubscribeAll() {
